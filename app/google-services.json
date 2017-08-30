@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "147034581736",
+    "firebase_url": "https://e-schedule-39574.firebaseio.com",
+    "project_id": "e-schedule-39574",
+    "storage_bucket": "e-schedule-39574.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147034581736:android:8bb49336872aa685",
+        "android_client_info": {
+          "package_name": "com.eschedule.eclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147034581736-itbmajav60jllg68fae6l2dq02ebc96f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Zu8lTYKzkLztGdslydVQA2pqKt228AM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

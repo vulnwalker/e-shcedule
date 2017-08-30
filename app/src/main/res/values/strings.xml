@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">e-Schedule Mobile</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="login_info_bottom">Hubungi Administrator untuk\nmengkaktifkan akun e-schedule mobile.</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</string>
+    <string name="page_ralat">Riwayat Ralat</string>
+    <string name="page_detail_informasi">Detil Informasi</string>
+    <string name="page_detail_jadwal">Detil Jadwal</string>
+    <string name="suara">sound</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pa">pa</string>
+    <string name="forward">Lanjut</string>
+</resources>

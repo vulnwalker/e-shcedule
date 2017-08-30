@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/item_list">
+
+    <ImageView
+        android:id="@+id/item.jadwal.picture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:src="@drawable/thumb"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/item.jadwal.picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item.jadwal.waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            tools:text="12:08 - 17:05"/>
+
+        <TextView
+            android:text="iniIdJadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item.jadwal.idjd"
+            android:textSize="1sp" />
+
+        <TextView
+            android:id="@+id/item.jadwal.tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginBottom="3dp"
+            tools:text="Minggu, 23 Oktober 2016 - Minggu, 23 Oktober 2016"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="0dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item.jadwal.author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp"
+                    tools:text="Administrator"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_panah"/>
+
+                <TextView
+                    android:id="@+id/item.jadwal.untuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    tools:text="Asisten 1, Asisten 2, Biro Asisten 1, Biro Keuangan"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_panah"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/item.jadwal.acara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="16dp"
+            tools:text="@string/lorem"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"/>
+
+</RelativeLayout>

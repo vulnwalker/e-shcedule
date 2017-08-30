@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.eschedule.eclient.settings.PengaturanFragment">
+
+    <ScrollView
+        android:id="@+id/info.detail.scroll"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="SUARA NOTIFIKASI"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:id="@+id/radioGroup"
+    android:layout_height="match_parent">
+            <RadioButton
+                android:text="Car Alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound" />
+
+            <RadioButton
+                android:text="Pixie Dust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound2" />
+
+            <RadioButton
+                android:text="On The Hunt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound3" />
+            <RadioButton
+                android:text="BBM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound4" />
+            <RadioButton
+                android:text="Bird Loop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound5" />
+            <RadioButton
+                android:text="Piezo Alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound6" />
+</RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

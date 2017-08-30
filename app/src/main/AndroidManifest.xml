@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eschedule.eclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Login"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".PushService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".InstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+        <activity
+            android:name=".informasi.RalatActivity"
+            android:label="@string/page_ralat" />
+        <activity
+            android:name=".informasi.InformasiDetailActivity"
+            android:label="@string/page_detail_informasi" />
+        <activity
+            android:name=".jadwal.JadwalDetailActivity"
+            android:label="@string/page_detail_jadwal" />
+        <activity
+            android:name=".lu.ListUser"
+            android:label="Informasi Kepada : " />
+        <activity
+            android:name=".lu.Insert_info"
+            android:label="Tambah Informasi" />
+
+        <receiver android:name=".StartSync">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".StartService" />
+        <service android:name=".RebootAlarmJadwal" />
+        <service android:name=".reloadData" />
+        <service android:name=".setInformasiAlarm" />
+        <service android:name=".SinkronManual" />
+        <receiver android:name=".AlarmInformasi" />
+        <receiver android:name=".notifikasiService" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
